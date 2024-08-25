@@ -46,7 +46,7 @@ services:
         gitlab_rails['ldap_enabled'] = true
         gitlab_rails['ldap_servers'] = {
           'main' => {
-            'label' => 'FLGVN AD',
+            'label' => 'HSVR AD',
             'host' =>  'AZVNADDC01.CAWOWX.local',
             'port' => 636,
             'uid' => 'sAMAccountName',
@@ -54,7 +54,7 @@ services:
             'verify_certificates' => false,
             'bind_dn' => 'GitLabSRV',
             'password' => 'changeme',
-            'base' => 'OU=VTN,DC=CAWOWX,DC=local',
+            'base' => 'OU=VTN,DC=HSVR,DC=local',
            }
          }
     ports:
